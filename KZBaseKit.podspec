@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name     = 'KZBaseKit'
-  s.version  = '.0.0.15'
+  s.version  = '0.0.0.15'
   s.license  = {:type => 'MIT',:file => 'License'}
   s.summary  = 'BaseKit'
   s.homepage = 'https://gitlab.com/kztech/KZBaseKit'
   s.authors  = { 'sp' => 'TODO' }
-  s.source   = { :git => 'https://gitlab.com/kztech/KZBaseKit.git', :tag => s.version, :submodules => true }
+  s.source   = { :git => 'https://github.com/kztecha/kzframeworks.git', :tag => s.version }
   s.requires_arc = true
   
   #KZBaseKit/**/*.{h,m}'
