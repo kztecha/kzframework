@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'KZBaseKit'
-  s.version  = '0.0.0.15'
+  s.version  = '0.0.0.16'
   s.license  = {:type => 'MIT',:file => 'License'}
   s.summary  = 'BaseKit'
   s.homepage = 'https://gitlab.com/kztech/KZBaseKit'
