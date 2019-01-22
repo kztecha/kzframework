@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'KZDebugTool'
-  s.version  = '10.1.0.11'
+  s.version  = '10.1.0.12'
   s.license  = {:type => 'MIT',:file => 'License'}
   s.summary  = 'To Debug'
   s.homepage = 'https://gitlab.com/kztech/KZDebugTool.git'
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   
   s.platform     = :ios
   s.platform     = :ios, "8.0"
-  s.dependency "KZBaseKit", "0.0.0.17"
+  s.dependency "KZBaseKit", "0.0.0.18"
   #s.resource_bundles = { 'KZDebugTool' => 'Resources/Settings.bundle'}
   s.vendored_frameworks = 'KZDebugTool.framework'
 end
