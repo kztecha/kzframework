@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   
   s.platform     = :ios
   s.platform     = :ios, "8.0"
-  s.dependency KZBaseKit, "0.0.0.17"
+  s.dependency "KZBaseKit", "0.0.0.17"
   #s.resource_bundles = { 'KZDebugTool' => 'Resources/Settings.bundle'}
   s.vendored_frameworks = 'KZDebugTool.framework'
 end
