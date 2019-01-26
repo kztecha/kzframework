@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'KZProtocolService'
-  s.version  = '1.0.1.38'
+  s.version  = '1.0.1.39'
   s.license  = {:type => 'MIT',:file => 'License'}
   s.summary  = 'protocol'
   s.homepage = 'https://gitlab.com/kztech/kzprotocolservice.git'
@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
   
   s.platform     = :ios
   s.platform     = :ios, "8.0"
-
+  s.vendored_frameworks = 'KZProtocolService.framework'
 end
