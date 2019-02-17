@@ -1,5 +1,7 @@
 {
 "KZBaseKit":"0",
 "KZDebugTool":"10",
-"KZProtocolService":"1"
+"KZProtocolService":"1",
+"KZFoundation":"2",
+"KZDemo":"3"
 }
