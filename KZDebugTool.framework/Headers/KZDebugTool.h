@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <KZBaseKit/KZTableViewCellItem.h>
 @interface KZDebugTool : NSObject
 
 @property (nonatomic, strong, class) KZDebugTool *defaultDebugTool;
@@ -20,4 +21,6 @@
 
 + (void)close;
 
+//+ (void)startFlipper:(NSArray <NSString *>*)pluginConfigList;
+- (void)addMenu:(nullable id)menu;
 @end

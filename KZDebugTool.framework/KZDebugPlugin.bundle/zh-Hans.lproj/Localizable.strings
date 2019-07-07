@@ -1,0 +1,41 @@
+/* 
+  Localizable.strings
+  PluginSDK
+
+  Created by shupeng zhang on 2019/1/28.
+  Copyright © 2019 . All rights reserved.
+*/
+
+"click" = "点击";
+"exit" = "退出";
+"text_placeholder" = "请输入内容";
+"start" = "开始";
+"sure" = "确定";
+"cancle"="取消";
+"Add" = "增加";
+"no_support_file" = "暂不支持打开文件类型";
+"null_file" = "空文件";
+"json_data_type" = "json 格式不对";
+"config_nil"="配置为空,请重新填写";
+"cursor_add"="光标前进";
+"cursor_back"="光标后退";
+"save"="保存";
+"start_install"="开始安装";
+"installing"="安装中";
+"installed"="已安装";
+"uninstall"="未安装";
+"delete"="卸载";
+"offline"="离线";
+"open_url_desc"="点击开始打开下面链接";
+"open_url" = "打开一个网址";
+"container_log" = "容器日志显示";
+"subapp_config" = "subapp 配置列表";
+"net_record" = "网络监控";
+"sandbox_path" = "查看沙盒目录";
+"clear_cache" = "清空缓存";
+"offline_package"="离线包";
+"net_record"="网络记录";
+"other"="其他";
+"server_control"="服务器控制";
+"open_server"="打开服务器";
+"open_server_desc"="打开上面的开关，开启服务器，这样就可以在同一局域网下进行http访问。方便在电脑端控制手机.";

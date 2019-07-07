@@ -1,0 +1,42 @@
+/* 
+  Localizable.strings
+  PluginSDK
+
+  Created by shupeng zhang on 2019/1/28.
+  Copyright © 2019 . All rights reserved.
+*/
+
+"click" = "click";
+"exit" = "exit";
+"text_placeholder" = "please input text";
+"start" = "start";
+"sure" = "sure";
+"cancle"="cancle";
+"Add" = "Add";
+"no_support_file" = "no support file type";
+"null_file" = "null file";
+"json_data_type" = "no json type";
+"config_nil"="config is nil,please rewrite";
+"cursor_add"="cursor add";
+"cursor_back"="cursor back";
+"save"="save";
+"history"="hitory";
+"start_install"="start install";
+"installing"="installing";
+"installed"="installed";
+"uninstall"="no install";
+"delete"="delete";
+"offline"="offline";
+"open_url_desc"="open the below url";
+"open_url" = "open a url";
+"container_log" = "show container log";
+"subapp_config" = "subapp config list";
+"net_record" = "http request record";
+"sandbox_path" = "see sandbox path";
+"clear_cache" = "clear cache";
+"server_control"="server control";
+"offline_package"="Offline Package";
+"net_record"="Net Record";
+"other"="Other";
+"open_server"="open server";
+"open_server_desc"="Turn on the switch above, you can start the server, and use http request it on same WiFi. it can help you control app on your computer.";
