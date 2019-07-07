@@ -1,12 +1,12 @@
 #pod ipc spec KZBaseKit.podspec >> KZBaseKit.podspec.json
 Pod::Spec.new do |s|
   s.name     = 'KZDebugTool'
-  s.version  = '.1.1.9'
+  s.version  = '10.1.1.9'
   s.license  = {:type => 'MIT',:file => 'License'}
   s.summary  = 'To Debug'
   s.homepage = 'https://gitlab.com/kztech/KZDebugTool.git'
   s.authors  = { 'sp' => 'yimo' }
-  s.source   = { :git => 'https://gitlab.com/kztech/KZDebugTool.git', :tag => s.version, :submodules => true }
+  s.source   = { :git => 'https://github.com/kztecha/kzframework.git', :tag => s.version }
   s.requires_arc = true
   
   #KZDebugTool/**/*.{h,m}'
