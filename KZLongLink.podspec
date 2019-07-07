@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name     = 'KZLongLink'
-  s.version  = '.1.0.7'
+  s.version  = '4.1.0.7'
   s.license  = {:type => 'MIT',:file => 'License'}
   s.summary  = 'socket,httpserver'
   s.homepage = 'https://gitlab.com/kztech/kzlonglink.git'
   s.authors  = { 'sp' => 'yimo' }
-  s.source   = { :git => 'https://gitlab.com/kztech/kzlonglink.git', :tag => s.version, :submodules => true }
+  s.source   = { :git => 'https://github.com/kztecha/kzframework.git', :tag => s.version }
   s.requires_arc = true
   
   #KZLongLink/**/*.{h,m}'
