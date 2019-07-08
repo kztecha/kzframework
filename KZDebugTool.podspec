@@ -1,7 +1,7 @@
 #pod ipc spec KZBaseKit.podspec >> KZBaseKit.podspec.json
 Pod::Spec.new do |s|
   s.name     = 'KZDebugTool'
-  s.version  = '10.1.1.9'
+  s.version  = '10.1.1.10'
   s.license  = {:type => 'MIT',:file => 'License'}
   s.summary  = 'To Debug'
   s.homepage = 'https://gitlab.com/kztech/KZDebugTool.git'
