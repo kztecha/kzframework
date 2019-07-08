@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'KZLongLink'
-  s.version  = '4.1.0.7'
+  s.version  = '4.1.0.8'
   s.license  = {:type => 'MIT',:file => 'License'}
   s.summary  = 'socket,httpserver'
   s.homepage = 'https://gitlab.com/kztech/kzlonglink.git'
