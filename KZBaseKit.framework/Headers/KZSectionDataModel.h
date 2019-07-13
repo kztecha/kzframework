@@ -11,34 +11,18 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KZSectionDataModel : NSObject
-/**
- 添加在0区
- */
-- (void)addData:(id)data;
-/**
- 添加数据data在section区
- */
+- (NSArray *)sectionArray:(NSInteger)sec;
+- (NSInteger)secCount ;
+- (NSInteger)rowCountAtSection:(NSInteger)sec;
+- (id)dataAtRow:(NSInteger)row ;
+- (id)dataAtRow:(NSInteger)row atSection:(NSInteger)sec ;
+- (void)removeDataAtRow:(NSInteger)row atSection:(NSInteger)sec;
+- (void)removeDataAtRow:(NSInteger)row ;
+- (void)removeAllDataAtSection:(NSInteger)sec;
 - (void)addData:(id)data atSection:(NSInteger)sec;
-
-/**
- 添加一组数据datas在section区
- 
- @param datas 数据
- @param sec 区
- */
-- (void)addDataArray:(NSArray *)datas atSection:(NSInteger)sec;
-/** 移除所有数据*/
-- (void)removeAllData;
-
-- (void)removeDataAtIndex:(NSInteger)index;
-
-- (void)removeDataAtIndex:(NSInteger)index section:(NSInteger)sec;
-
-- (void)removeSectionAllElements:(NSInteger)sec;
-
-- (void)removeSection:(NSInteger)sec;
-
-- (NSDictionary *)allDataDic;
+- (void)addData:(id)data ;
+- (void)addDatas:(NSArray*)datas atSection:(NSInteger)sec;
+- (void)addDatas:(NSArray *)datas;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "KZTableView.h"
+#import "KZTableViewCellItem.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KZTableViewController : UIViewController
@@ -16,4 +17,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface KZAutoTableViewController : KZTableViewController
+    
+
+@property (nonatomic, strong) KZTableViewCellItem *item;
+
+@end
+
+@interface KZAutoTableViewModel : KZTableViewModel
+
+@end
 NS_ASSUME_NONNULL_END

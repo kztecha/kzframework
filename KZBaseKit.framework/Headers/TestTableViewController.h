@@ -10,8 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TestTableViewController : KZTableViewController
+@interface KZTestCell : KZTableViewCell
+    
+@end
+@interface TestTableViewController : KZAutoTableViewController
 
 @end
+
+
 
 NS_ASSUME_NONNULL_END
