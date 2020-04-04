@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'KZLongLink'
-  s.version  = '4.1.0.11'
+  s.version  = '4.1.0.13'
   s.license  = {:type => 'MIT',:file => 'License'}
   s.summary  = 'socket,httpserver'
   s.homepage = 'https://gitlab.com/kztech/kzlonglink.git'
@@ -12,8 +12,6 @@ Pod::Spec.new do |s|
   #s.public_header_files = 'KZLongLink/**/*.h'
 
   s.dependency "CocoaAsyncSocket"
-  s.dependency "CocoaHTTPServer"
-  s.dependency "CocoaLumberjack"
   s.platform     = :ios
   s.platform     = :ios, "8.0"
   s.vendored_frameworks = 'KZLongLink.framework'
