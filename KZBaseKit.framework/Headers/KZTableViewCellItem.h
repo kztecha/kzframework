@@ -8,15 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "KZBaseCellItem.h"
+
 NS_ASSUME_NONNULL_BEGIN
-extern NSString * const KZTableViewCellItemTitle;
-extern NSString * const KZTableViewCellItemSubTitle;
-extern NSString * const KZTableViewCellItemImage;
-extern NSString * const KZTableViewCellItemAction;
-extern NSString * const KZTableViewCellItemSubPage;
-extern NSString * const KZTableViewCellItemController;
-extern NSString * const KZTableViewCellItemCustomInfo;
-extern NSString * const KZTableViewCellItemCellType;
+
+
+typedef NS_ENUM(NSUInteger, CellItemCellNavType) {
+    NavTypeViewController,
+    NavTypeWeb,
+};
 
 @class KZTableViewCellItem;
 typedef BOOL(^KZTableViewCellItemActionBlock)(NSInteger index, NSInteger section, KZTableViewCellItem *item);
@@ -31,18 +31,23 @@ typedef BOOL(^KZTableViewCellItemActionBlock)(NSInteger index, NSInteger section
 - (void)itemBeforeLoadData:(KZTableViewCellItem *)item;
 - (NSString *)item:(KZTableViewCellItem *)item cellClassNameAtIndexPath:(NSIndexPath *)indexPath;
 
+//it will call when cell first load. if need update, please set item.height = 0
+- (CGFloat)itemHeight:(KZTableViewCellItem *)item;
 @end
 
 @interface KZTableViewCellItem : NSObject
+
 /**/
 @property (nonatomic, assign) NSInteger layer;
 /**/
 @property (nonatomic, copy) NSString *title;
-@property (nonatomic, strong) UIImage *image;
+@property (nonatomic, strong) id image;
 @property (nonatomic, copy) NSString *subTitle;
+@property (nonatomic, assign) BOOL notInheritController;
 @property (nonatomic, copy) NSArray *subPageItems;
 @property (nonatomic, strong) NSDictionary *customInfo;
-@property (nonatomic, assign) BOOL cellNotShowAllText;
+//@property (nonatomic, assign) BOOL cellNotShowAllText;
+@property (nonatomic, assign) CGFloat height;
 /**/
 @property (nonatomic, copy) KZTableViewCellItemActionBlock action;
 @property (nonatomic, strong) id<KZTableViewCellItemControllerProtocol> controller;
@@ -52,9 +57,9 @@ typedef BOOL(^KZTableViewCellItemActionBlock)(NSInteger index, NSInteger section
 - (KZTableViewCellItem *)addSubItem:(id)item;
 - (KZTableViewCellItem *)subItem:(NSInteger)indexList;
 
-+ (instancetype)newCellItem:(nullable NSString *)title subTitle:(nullable NSString *)subtitle image:(nullable UIImage *)image;
-+ (instancetype)newCellItem:(nullable NSString *)title subTitle:(nullable NSString *)subtitle image:(nullable UIImage *)image action:(nullable KZTableViewCellItemActionBlock)action subPages:(nullable NSArray *)subPageItems;
-
++ (instancetype)newCellItem:(nullable NSString *)title subTitle:(nullable NSString *)subtitle image:(nullable NSString *)image;
++ (KZTableViewCellItem *)newItem:(id)item;
++ (KZTableViewCellItem *)newItem:(id)item subItem:(nullable KZTableViewCellItem*(^)(id item))itemBlock;
 /**
  
  

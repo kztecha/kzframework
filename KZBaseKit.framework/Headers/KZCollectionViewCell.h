@@ -1,18 +1,17 @@
 //
-//  KZTableViewCell.h
+//  KZCollectionViewCell.h
 //  KZBaseKit
 //
-//  Created by zhangshupeng on 2019/1/12.
-//  Copyright © 2019年 kz. All rights reserved.
+//  Created by zhangshupeng on 2019/10/13.
+//  Copyright © 2019 kz. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-
+@class KZCollectionViewCell;
 NS_ASSUME_NONNULL_BEGIN
 
-@class KZTableViewCell;
 
-@protocol KZTableViewCellDelegate <NSObject>
+@protocol KZCollectionViewCellDelegate <NSObject>
 
 /**
  处理cell的交互事件
@@ -21,13 +20,11 @@ NS_ASSUME_NONNULL_BEGIN
  @param clickInfo 传递的事件信息
  */
 @optional
-- (void)cell:(KZTableViewCell *)cell InteractionEvent:(id)clickInfo;
+- (void)cell:(KZCollectionViewCell *)cell InteractionEvent:(id)clickInfo;
 
 @end
 
-
-
-@interface KZTableViewCell : UITableViewCell
+@interface KZCollectionViewCell : UICollectionViewCell
 /*
  用来暂时保存一些数据，需创建赋值
  */
@@ -36,7 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 /*
  用来迁出cell上的一些事件到控制器
  */
-@property (nonatomic, weak) id<KZTableViewCellDelegate>delegate;
+@property (nonatomic, weak) id<KZCollectionViewCellDelegate>delegate;
 
 /** 当前cell的indexPath*/
 @property (nonatomic,weak) NSIndexPath *indexPath;
