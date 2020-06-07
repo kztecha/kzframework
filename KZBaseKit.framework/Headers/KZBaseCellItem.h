@@ -24,7 +24,7 @@ extern NSString * const KZCellItemCellType;
 extern NSString * const KZCellItemCellNavType;
 extern NSString * const KZCellItemCellURL;
 extern NSString * const KZCellItemCellVC;
-extern NSString * const KZCellItemCellInheritController;
+
 @protocol KZCellItemControllerProtocol <NSObject>
 
 ///
@@ -38,8 +38,6 @@ extern NSString * const KZCellItemCellInheritController;
 @end
 
 @interface KZBaseCellItem : NSObject
-
-@property (nonatomic, assign) BOOL notInheritController;
 /**/
 //@property (nonatomic, assign) NSInteger layer;
 /**/

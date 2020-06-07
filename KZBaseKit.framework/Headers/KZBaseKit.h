@@ -11,17 +11,19 @@
 #import "KZSwipeView.h"
 #import "KZWaterFlowView.h"
 #import "KZCollectionViewController.h"
-#import "KZImageHandler.h"
+
+#define KZAPP @"KZAPPNAME"
 
 @interface KZBaseKit : NSObject
-
-@property (nonatomic, weak) id<KZImageProtocol>imageDownloadManager;
-
-@property (nonatomic, strong, class) KZBaseKit *defaultManager;
-
 
 + (nonnull NSString *)name;
 
 + (nonnull NSString *)version;
+/*
+ app bundleid
+ */
++ (void)registerApp:(NSString *_Nullable)app;
+
++(void)checkApp;
 
 @end

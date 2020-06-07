@@ -36,14 +36,12 @@ typedef BOOL(^KZTableViewCellItemActionBlock)(NSInteger index, NSInteger section
 @end
 
 @interface KZTableViewCellItem : NSObject
-
 /**/
 @property (nonatomic, assign) NSInteger layer;
 /**/
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, strong) id image;
 @property (nonatomic, copy) NSString *subTitle;
-@property (nonatomic, assign) BOOL notInheritController;
 @property (nonatomic, copy) NSArray *subPageItems;
 @property (nonatomic, strong) NSDictionary *customInfo;
 //@property (nonatomic, assign) BOOL cellNotShowAllText;
@@ -57,7 +55,7 @@ typedef BOOL(^KZTableViewCellItemActionBlock)(NSInteger index, NSInteger section
 - (KZTableViewCellItem *)addSubItem:(id)item;
 - (KZTableViewCellItem *)subItem:(NSInteger)indexList;
 
-+ (instancetype)newCellItem:(nullable NSString *)title subTitle:(nullable NSString *)subtitle image:(nullable NSString *)image;
++ (instancetype)newCellItem:(nullable NSString *)title subTitle:(nullable NSString *)subtitle image:(nullable UIImage *)image;
 + (KZTableViewCellItem *)newItem:(id)item;
 + (KZTableViewCellItem *)newItem:(id)item subItem:(nullable KZTableViewCellItem*(^)(id item))itemBlock;
 /**
